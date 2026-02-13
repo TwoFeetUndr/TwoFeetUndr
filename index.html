@@ -1,37 +1,88 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>TwoFeetUndr</title>
-<style>
-body {
-  margin: 0;
-  background-color: #000;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TwoFeetUndr</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-h1 {
-  font-size: 40px;
-  letter-spacing: 3px;
-}
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
 
-p {
-  font-size: 30px;
-  margin-top: 20px;
-  opacity: 0.7;
-}
-</style>
+    .container {
+      width: 100%;
+      max-width: 600px;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+      width: 400px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    p {
+      font-size: clamp(18px, 5vw, 30px);
+      margin-top: 20px;
+      opacity: 0.7;
+      padding: 0 10px;
+    }
+
+    /* Media queries para diferentes tamaños de pantalla */
+    @media (max-width: 768px) {
+      img {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      body {
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      img {
+        max-width: 250px;
+      }
+
+      p {
+        margin-top: 15px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      img {
+        max-width: 400px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<div>
-  <h1><img src="logo.png.png" alt="mi foto" width="400" height"300"></h1>
-  <p>Undr Construction. See you soon.</p>
-</div>
+  <div class="container">
+    <h1><img src="logo.png.png" alt="TwoFeetUndr Logo"></h1>
+    <p>Undr Construction. See you soon.</p>
+  </div>
 </body>
+
 </html>
